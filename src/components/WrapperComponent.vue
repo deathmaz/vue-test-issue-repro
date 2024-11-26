@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import TestComponent from './TestComponent.vue'
 import {reactive} from 'vue';
+import CheckboxWrapper from './CheckboxWrapper.vue';
 
 const state = reactive({
   foo: false,
@@ -15,7 +16,7 @@ const state = reactive({
       </button>
     </template>
     <template #body>
-      <input type="checkbox" data-test="checkbox" v-model="state.foo" />
+      <CheckboxWrapper v-model="state.foo"></CheckboxWrapper>
     </template>
   </TestComponent>
 </template>
