@@ -27,7 +27,7 @@ function toggle() {
         :toggle="toggle"
       />
     </div>
-    <teleport to="body">
+    <teleport to="body" disabled>
       <div
         v-if="opened"
         ref="floatingRef"
